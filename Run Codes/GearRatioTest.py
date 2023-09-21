@@ -19,10 +19,11 @@ speed = 200
 # of the maximum torque against the mechanical stop. This way,
 # you don't push against it with too much force.
 Left_arm.run_until_stalled(-speed, duty_limit=30)
-
+Right_arm.run_until_stalled(-speed, duty_limit=30)
 # Reset the angle to 0. Now whenever the angle is 0, you know
 # that it has reached the mechanical endpoint.
 Left_arm.reset_angle(0)
+Right_arm.reset_angle(0)
 
 # Now make the motor go back and forth in a loop.
 # This will now work the same regardless of the
@@ -31,3 +32,5 @@ Left_arm.reset_angle(0)
 for count in range(5):
     Left_arm.run_target(speed, 180)
     Left_arm.run_target(speed, 90)
+    Right_arm_arm.run_target(speed, 180)
+    Right_arm_arm.run_target(speed, 90)
