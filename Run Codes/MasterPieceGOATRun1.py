@@ -61,14 +61,16 @@ drive_base.settings(200, 800, 100, 200)
 drive_base.straight(80)
 drive_base.straight(-80)
 # COMPLETE COLLECT SAM STAGE MANAGER AND EXECUTE M02
-
+# Execute M03
 drive_base.turn(100)
+
 drive_base.settings(300, 800, 100, 200)
 drive_base.straight(180)
 drive_base.turn(20)
-Left_arm.run_angle(600, 280)
+Left_arm.run_angle(600, 50)
 drive_base.settings(25, 800, 20, 200)
+drive_base.straight(6)
 drive_base.turn(-18)
-Left_arm.run_angle(300, -100)
-drive_base.straight(-15)
-Left_arm.run_angle(800, -500)
+Left_arm.run_angle(400,50)
+drive_base.straight(15)
+Left_arm.run_angle(400, 350)
