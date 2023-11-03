@@ -37,6 +37,23 @@ def Mahati_Aarush():
 def Aarush_Mahati():
   #Code starts from here for 4th run
 def Aarush_Vihaan():
+  Left_arm.run_angle(500,-405)
+  drive_base.straight(135)
+  Left_arm.run_angle(500,405)
+  drive_base.straight(220)
+  drive_base.straight(-220)
+  drive_base.curve(100,13) 
+  drive_base.straight(320)
+  drive_base.curve(100,77)
+  drive_base.curve(10,2.5)
+  drive_base.straight(40)
+  Right_arm.dc(100)
+  Right_arm.run_angle(100000,-3700) 
+  drive_base.straight(-65)
+  drive_base.turn(-80)
+  drive_base.straight(300)
+  drive_base.turn(-40)
+  drive_base.straight(500)
 #Based on Selection, run the program
 if selected == "1":
     Sahas_Nik()
