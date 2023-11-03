@@ -37,6 +37,7 @@ def Mahati_Aarush():
 def Aarush_Mahati():
   #Code starts from here for 4th run
 def Aarush_Vihaan():
+  drive_base.straight(290)
   Left_arm.run_angle(500,-405)
   drive_base.straight(135)
   Left_arm.run_angle(500,405)
