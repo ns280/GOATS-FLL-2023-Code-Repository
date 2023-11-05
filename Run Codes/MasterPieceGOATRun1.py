@@ -33,7 +33,7 @@ drive_base.settings(400, 800, 100, 200)
 
 
 # START MOVING ROBOT TO EXECUTE M01
-Left_arm.run_angle(500, -260, wait=False)
+Left_arm.run_angle(500, -260)
 drive_base.turn(-65)
 drive_base.straight(390)
 wait(100)
@@ -63,25 +63,30 @@ drive_base.straight(90)
 drive_base.straight(-70)
 # COMPLETE COLLECT SAM STAGE MANAGER AND EXECUTE MISSION 02
 #Turn after bumping
-drive_base.turn(110)
+drive_base.turn(106)
 
 #Skipping Mission 03
 
 
 #Going to execute Mission 04
 drive_base.settings(300, 800, 100, 200)
-drive_base.straight(120)
+drive_base.straight(170)
 drive_base.turn(15)
-drive_base.straight(540)
+drive_base.straight(570)
 drive_base.turn(-33)
 Left_arm.run_angle(250, 260)
-drive_base.straight(135)
-drive_base.turn(45)
-drive_base.straight(-20)
-Left_arm.run_angle(400, 270)
+drive_base.straight(35)
+drive_base.turn(50)
+wait (100)
+drive_base.straight(-100)
+Left_arm.run_angle(400, -270)
 #Mission 04 done
 # Going to execute Mission 6 and Mission 7
 drive_base.turn(25)
 drive_base.straight(180)
-drive_base.turn(-15)
-drive_base.straight(200)
+drive_base.turn(-25)
+drive_base.straight(340)
+drive_base.turn(-35)
+Left_arm.run_angle(400, 270)
+drive_base.straight(190)
+Left_arm.run_angle(400, -260)
