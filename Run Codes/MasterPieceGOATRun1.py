@@ -16,61 +16,72 @@ right_motor = Motor(Port.D)
 drive_base = GyroDriveBase(left_motor, right_motor, wheel_diameter=62.5, axle_track=136)
 
 drive_base.settings(400, 800, 100, 200) 
-Right_arm = Motor(Port.E, Direction.COUNTERCLOCKWISE, [24, 12, 24])
-Left_arm = Motor(Port.A, Direction.CLOCKWISE, [24, 12, 24])
+Right_arm = Motor(Port.E, Direction.COUNTERCLOCKWISE, [12, 24, 12, 24])
+Left_arm = Motor(Port.A, Direction.CLOCKWISE, [12, 24, 12, 48])
 
 # CODE from start position to move Orange Stop / M08 and M09 completion 
-Right_arm.run_angle(250, 510, wait=False)
+Right_arm.run_angle(200, 270, wait=False)
+Left_arm.run_angle(200, 270, wait=False)
 drive_base.straight(250)
-#Right_arm.run_angle(400, 510)
-Left_arm.run_angle(400, 350)
-drive_base.straight(40)
-Right_arm.run_angle(600, -250)
-drive_base.settings(80, 800, 100, 200)
+drive_base.straight(50)
+Right_arm.run_angle(700, -270)
+drive_base.settings(90, 800, 100, 200)
 drive_base.straight(-115)
 drive_base.turn(-40)
 drive_base.settings(400, 800, 100, 200) 
 # ORANGE STOP LIFTED(M08) and M09 COMPLETE
 
+
 # START MOVING ROBOT TO EXECUTE M01
-Left_arm.run_angle(400, -250)
+Left_arm.run_angle(500, -260, wait=False)
 drive_base.turn(-65)
-drive_base.straight(385)
+drive_base.straight(390)
 wait(100)
 drive_base.turn(-73)
 drive_base.settings(100, 800, 100, 200)
-Right_arm.run_angle(150, 400, wait=False)
-drive_base.straight(100)
+Right_arm.run_angle(280, 320, wait=False)
+drive_base.straight(130)
+wait(500)
 #Right_arm.run_angle(400, 320)
 drive_base.straight(-60)
-Right_arm.run_angle(400, -400)
+Right_arm.run_angle(400, -270)
 drive_base.settings(400, 800, 100, 200)
-drive_base.straight(-80)
 # M01 COMPLETE
 
 # START MOVING ROBOT TO COLLECT SAM STAGE MANAGER AND EXECUTE M02
+drive_base.straight(-70)
 drive_base.turn(80)
-Right_arm.run_angle(200, 600, wait=False)
-drive_base.straight(290)
+Right_arm.run_angle(200, 280, wait=False)
+drive_base.straight(285)
 #Right_arm.run_angle(400, 400)
 drive_base.settings(100, 800, 30, 200)
 drive_base.turn(-15)
-Right_arm.run_angle(600, -280)
-drive_base.turn(-13)
+Right_arm.run_angle(400, -175)
+drive_base.turn(-16)
 drive_base.settings(200, 800, 100, 200)
-drive_base.straight(80)
-drive_base.straight(-80)
-# COMPLETE COLLECT SAM STAGE MANAGER AND EXECUTE M02
-# Execute M03
-drive_base.turn(100)
+drive_base.straight(90)
+drive_base.straight(-70)
+# COMPLETE COLLECT SAM STAGE MANAGER AND EXECUTE MISSION 02
+#Turn after bumping
+drive_base.turn(110)
 
+#Skipping Mission 03
+
+
+#Going to execute Mission 04
 drive_base.settings(300, 800, 100, 200)
+drive_base.straight(120)
+drive_base.turn(15)
+drive_base.straight(540)
+drive_base.turn(-33)
+Left_arm.run_angle(250, 260)
+drive_base.straight(135)
+drive_base.turn(45)
+drive_base.straight(-20)
+Left_arm.run_angle(400, 270)
+#Mission 04 done
+# Going to execute Mission 6 and Mission 7
+drive_base.turn(25)
 drive_base.straight(180)
-drive_base.turn(20)
-Left_arm.run_angle(600, 50)
-drive_base.settings(25, 800, 20, 200)
-drive_base.straight(6)
-drive_base.turn(-18)
-Left_arm.run_angle(400,50)
-drive_base.straight(15)
-Left_arm.run_angle(400, 350)
+drive_base.turn(-15)
+drive_base.straight(200)
