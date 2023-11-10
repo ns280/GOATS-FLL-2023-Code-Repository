@@ -26,11 +26,6 @@ selected = hub_menu("1","2", "3","4","5")
 def Sahas_Nik():
 #Run 1 Code
 
-
-def Sahas_NikSecond():
-  #Run 5 Code
-
-
 def Mahati_Aarush():
 #Code starts from here for 3rd run
 
@@ -55,6 +50,10 @@ def Aarush_Vihaan():
     drive_base.turn(90)
     drive_base.settings(800,1000,100,200)
     drive_base.straight(1000)
+  
+def Sahas_NikSecond():
+  #Run 5 Code
+
 #Based on Selection, run the program
 if selected == "1":
     Sahas_Nik()
