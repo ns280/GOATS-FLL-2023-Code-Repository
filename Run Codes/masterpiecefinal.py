@@ -27,12 +27,12 @@ def Sahas_Nik():
 #Run 1 Code
 
 
-def Sahas_Nik2():
+def Sahas_NikSecond():
   #Run 5 Code
 
 
 def Mahati_Aarush():
-#MahatiAarush Code starts from here
+#Code starts from here for 3rd run
 
 def Aarush_Mahati():
   #Code starts from here for 4th run
@@ -65,4 +65,4 @@ elif selected == "3":
 elif selected== "4":
     Aarush_Vihaan()
 elif selected == "5":
-    Sahas_Nik2()
+    Sahas_NikSecond()
