@@ -27,10 +27,8 @@ def Sahas_Nik():
 #Run 1 Code
 
 def Mahati_Aarush():
-#Code starts from here for 3rd run
+#Run 2 Code
 
-def Aarush_Mahati():
-  #Code starts from here for 4th run
 def Aarush_Vihaan():
     drive_base.straight(300)
     Left_arm.run_angle(500,-405)
@@ -50,6 +48,9 @@ def Aarush_Vihaan():
     drive_base.turn(90)
     drive_base.settings(800,1000,100,200)
     drive_base.straight(1000)
+
+def Mahati():
+  #Run 4 Code
   
 def Sahas_NikSecond():
   #Run 5 Code
@@ -59,9 +60,9 @@ if selected == "1":
     Sahas_Nik()
 elif selected == "2":
     Mahati_Aarush()
-elif selected == "3":
-    Aarush_Mahati()
-elif selected== "4":
+elif selected== "3":
     Aarush_Vihaan()
+elif selected == "4":
+    Mahati()
 elif selected == "5":
     Sahas_NikSecond()
