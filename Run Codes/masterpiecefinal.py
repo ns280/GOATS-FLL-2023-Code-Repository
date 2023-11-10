@@ -52,8 +52,6 @@ def Aarush_Vihaan():
 def Mahati():
   #Run 4 Code
   
-def Sahas_NikSecond():
-  #Run 5 Code
 
 #Based on Selection, run the program
 if selected == "1":
@@ -64,5 +62,3 @@ elif selected== "3":
     Aarush_Vihaan()
 elif selected == "4":
     Mahati()
-elif selected == "5":
-    Sahas_NikSecond()
