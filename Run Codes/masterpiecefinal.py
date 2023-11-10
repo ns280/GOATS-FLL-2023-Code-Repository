@@ -26,6 +26,106 @@ selected = hub_menu("1","2", "3","4","5")
 def Sahas_Nik():
 #Run 1 Code
 
+# CODE from start position to move Orange Stop / M08 and M09 completion 
+Right_arm.run_angle(200, 260, wait=False)
+Left_arm.run_angle(180, 260, wait=False)
+drive_base.straight(250)
+drive_base.straight(50)
+Right_arm.run_angle(900, -270)
+drive_base.settings(90, 800, 100, 200)
+drive_base.straight(-115)
+drive_base.turn(-40)
+drive_base.settings(400, 800, 100, 200) 
+# ORANGE STOP LIFTED(M08) and M09 COMPLETE
+
+
+# START MOVING ROBOT TO EXECUTE M01
+Left_arm.run_angle(500, -50)
+Left_arm.run_angle(500, -210, wait=False)
+drive_base.turn(-65)
+drive_base.straight(390)
+wait(100)
+drive_base.turn(-73)
+drive_base.settings(100, 800, 100, 200)
+Right_arm.run_angle(260, 360, wait=False)
+drive_base.straight(135)
+wait(100)
+#Right_arm.run_angle(400, 320)
+drive_base.straight(-60)
+Right_arm.run_angle(400, -270)
+drive_base.settings(400, 800, 100, 200)
+# M01 COMPLETE
+
+# START MOVING ROBOT TO COLLECT SAM STAGE MANAGER AND EXECUTE M02
+drive_base.straight(-70)
+drive_base.turn(85)
+Right_arm.run_angle(200, 280, wait=False)
+drive_base.straight(290)
+#Right_arm.run_angle(400, 400)
+drive_base.settings(100, 800, 30, 200)
+drive_base.turn(-19)
+Right_arm.run_angle(300, -165)
+drive_base.turn(-16)
+drive_base.settings(200, 800, 100, 200)
+drive_base.straight(90)
+drive_base.straight(-90)
+# COMPLETE COLLECT SAM STAGE MANAGER AND EXECUTE M02
+
+# HEAD TO M03 AND EXECUTE
+drive_base.turn(100)
+drive_base.settings(300, 800, 100, 200)
+drive_base.straight(190)
+drive_base.turn(28)
+
+Left_arm.run_angle(400, 270)
+drive_base.settings(60, 800, 20, 200)
+drive_base.turn(-22)
+
+Left_arm.dc(75)
+Left_arm.run_angle(350, -280, wait=False)
+wait(400)
+drive_base.straight(-70)
+# COMPLETE  M02
+
+# HEAD TO M05 AND EXECUTE
+drive_base.settings(600, 800, 200, 400)
+drive_base.turn(15)
+Left_arm.run_angle(900, 280, wait=False)
+drive_base.straight(560)
+Right_arm.run_angle(400, -20, wait=False)
+drive_base.turn(-20)
+drive_base.straight(65)
+drive_base.settings(600, 800, 300, 400)
+drive_base.turn(80)
+# COMPLETE M05
+
+# HEAD TO M06 and M07 AND EXECUTE
+drive_base.settings(400, 600, 100, 200)
+Left_arm.run_angle(500, -280, wait=False)
+drive_base.straight(140)
+drive_base.turn(-53)
+wait(10)
+drive_base.straight(480)
+drive_base.turn(-40)
+
+
+
+drive_base.settings(80, 200, 200, 400)
+drive_base.straight(-30)
+Left_arm.run_angle(400, 280)
+drive_base.straight(75)
+Left_arm.run_angle(400, -50)
+drive_base.turn(-25)
+drive_base.straight(-80)
+Left_arm.run_angle(400, -240)
+drive_base.turn(10)
+drive_base.straight(120)
+Right_arm.run_angle(400, 60, wait=False)
+drive_base.turn(12)
+drive_base.straight(-120)
+drive_base.turn(100)
+drive_base.settings(800, 900, 200, 400)
+drive_base.straight(600)
 def Mahati_Aarush():
 #Run 2 Code
 
@@ -49,7 +149,7 @@ def Aarush_Vihaan():
     drive_base.settings(800,1000,100,200)
     drive_base.straight(1000)
 
-def Mahati():
+def A_M():
   #Run 4 Code
   
 
@@ -61,4 +161,4 @@ elif selected == "2":
 elif selected== "3":
     Aarush_Vihaan()
 elif selected == "4":
-    Mahati()
+    A_M()
