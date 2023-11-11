@@ -183,7 +183,23 @@ def Aarush_Vihaan():
 
 def A_M():
   #Run 4 Code
-  
+  #Code Starts here!
+drive_base.curve(100, -35)
+drive_base.straight(240)
+Right_arm.run_target(300, -400,wait=False)
+wait(300)
+drive_base.settings(150,600,100,200)
+drive_base.turn(-0.5)
+drive_base.straight(122)
+Left_arm.run_target(1000, 3000)
+drive_base.turn(-8)
+drive_base.straight(-100)
+drive_base.curve(320,12)
+drive_base.settings(300,600,100,200)
+drive_base.settings(999, 999, 999, 999)
+drive_base.straight(-150)
+drive_base.turn(-220)
+drive_base.straight(300)
 
 #Based on Selection, run the program
 if selected == "1":
