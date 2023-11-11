@@ -11,29 +11,35 @@ left_motor = Motor(Port.C, Direction.COUNTERCLOCKWISE)
 right_motor = Motor(Port.D)
 
 drive_base = GyroDriveBase(left_motor, right_motor, wheel_diameter=62.5, axle_track=136)
-drive_base.settings(300,600,100,200)
+drive_base.settings(350,650,100,200)
 
 
 Right_arm = Motor(Port.E, Direction.COUNTERCLOCKWISE, [24, 12, 12, 24])
 Left_arm = Motor(Port.A, Direction.COUNTERCLOCKWISE, [24, 12, 12, 24])
 
-speed = 700
+speed = 500
 
-#Code Starts here!
-drive_base.curve(100, -35)
-drive_base.straight(240)
-Right_arm.run_target(300, -400,wait=False)
-wait(300)
-drive_base.settings(150,600,100,200)
-drive_base.turn(-0.5)
-drive_base.straight(122)
-Left_arm.run_target(1000, 3000)
-drive_base.turn(-8)
-drive_base.straight(-100)
-drive_base.curve(320,12)
-drive_base.settings(300,600,100,200)
-drive_base.settings(999, 999, 999, 999)
+#Drop off little experts and audience members #Yay
+drive_base.turn(-5) 
+drive_base.straight(795)
+drive_base.turn(-45)
+Right_arm.run_angle(200,225)
+wait(10)
+Right_arm.run_angle(300, -35, wait=False)
+drive_base.straight(-70)
+#Turn to avoid flower
+#drive_base.turn(-57)
+drive_base.curve(45,-63)
+drive_base.straight(200)
+wait(10)
+
+#drop off innovation
+drive_base.curve(320,86)
+drive_base.straight(-50)
+#wait(2000)
+#drive_base.turn(-30)
+Right_arm.run_angle(200,240)
 drive_base.straight(-150)
-drive_base.turn(-220)
+drive_base.turn(-50)
 drive_base.straight(300)
-
+drive_base.curve(520,66)
