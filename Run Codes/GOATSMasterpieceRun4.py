@@ -21,9 +21,9 @@ speed = 200
 
 
 drive_base.straight(290)
-Left_arm.run_angle(500,-405)
+Left_arm.run_angle(500,-415)
 drive_base.straight(135)
-Left_arm.run_angle(500,405)
+Left_arm.run_angle(500,415)
 drive_base.straight(220)
 drive_base.straight(-220)
 drive_base.curve(100,13) 
