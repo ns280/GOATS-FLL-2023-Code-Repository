@@ -165,9 +165,9 @@ drive_base.straight(300)
 def Aarush_Vihaan():
     #Drive parallel to rolling camera
     drive_base.straight(300)
-    Left_arm.run_angle(500,-405)
+    Left_arm.run_angle(500,-415)
     drive_base.straight(135)
-    Left_arm.run_angle(500,405,wait=False)
+    Left_arm.run_angle(500,415,wait=False)
     drive_base.straight(220)
     drive_base.straight(-220)
     drive_base.curve(100,13) 
