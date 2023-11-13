@@ -125,40 +125,39 @@ def Sahas_Nik():
     drive_base.straight(600)
 
 def Mahati_Aarush():
-#Run 2 Code
-#Code Starts here!
-    Left_arm = Motor(Port.A, Direction.COUNTERCLOCKWISE, [24, 12, 12, 24])
-    drive_base.curve(100, -35)
-#Reach the girl
-    drive_base.straight(240)
-#Pickup girl
-    Right_arm.run_target(500, -400)
-#updating the speed
-    drive_base.settings(150,600,100,200)
-#commenting the turn to test it out
-#drive_base.turn(-1)
-#Reach Chicken gear
-    drive_base.straight(123)
-#Moving the chicken
-    Left_arm.run_target(1000, 3000)
-#Aligning to lift the latch
-    drive_base.turn(-8)
-#increasing velocity so latch comes up
-    drive_base.settings(300,600,100,200)
-#Raising latch and coming back
-    drive_base.straight(-105)
-#To get out of the way
-#drive_base.curve(320,5) - did not work
-#drive_base.curve(320,12) - original but not consistent
-    drive_base.curve(350,12)
-#Updating the speed to go faster (600, 600, 200,200)
-    drive_base.settings(600,600,200,200)
-#Coming back
-    drive_base.straight(-180)
-#Pickup lady
-    drive_base.turn(-220)
-#Get to the homezone
-    drive_base.straight(300)
+#Drop off little experts and audience members #Yay
+    drive_base.turn(-5) 
+    drive_base.straight(795)
+    drive_base.turn(-45)
+    Right_arm.run_angle(200,225)
+    wait(10)
+    Right_arm.run_angle(300, -35, wait=False)
+    drive_base.straight(-70)
+#Turn to avoid flower
+#drive_base.turn(-57) replaced with curve
+    drive_base.curve(45,-63)
+    drive_base.straight(200)
+wait(10)
+
+#drop off innovation
+    drive_base.curve(320,86)
+    drive_base.straight(-50)
+#drive_base.turn(-30)
+    Right_arm.run_angle(200,240)
+    drive_base.straight(-150)
+    drive_base.turn(-50)
+    drive_base.straight(400)
+    drive_base.turn(10)
+# IZZY dropoff
+    Right_arm.run_angle(200,200)
+    drive_base.turn(-30)
+#drive_base.curve(520,60)
+#the last expert
+    Right_arm.run_angle(200,320,wait=False)
+    drive_base.straight(120)
+    drive_base.curve(350,-50)
+    wait(10000)
+#The End!
 
 def Aarush_Vihaan():
     #Drive parallel to rolling camera
