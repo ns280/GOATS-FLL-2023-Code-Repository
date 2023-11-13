@@ -14,7 +14,7 @@ drive_base = GyroDriveBase(left_motor, right_motor, wheel_diameter=62.5, axle_tr
 drive_base.settings(300,600,100,200)
 
 Right_arm = Motor(Port.E, Direction.COUNTERCLOCKWISE, [12, 24, 12, 24])
-Left_arm = Motor(Port.A, Direction.COUNTERCLOCKWISE, [12, 24, 12, 48])
+Left_arm = Motor(Port.A, Direction.CLOCKWISE, [12, 24, 12, 48])
 
 speed = 400
 
