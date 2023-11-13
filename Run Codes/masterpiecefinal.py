@@ -185,7 +185,7 @@ def A_M():
     #Code Starts here!
     drive_base.curve(100, -35)
 #Reach the girl
-drive_base.straight(240)
+    drive_base.straight(240)
 #Pickup girl
     Right_arm.run_target(500, -400)
 #updating the speed
