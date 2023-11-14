@@ -165,21 +165,43 @@ def A_M():
 def Aarush_Vihaan():
     #Drive parallel to rolling camera
     drive_base.straight(300)
+    
+    #Lower left arm into the pocket next to the rolling camera
     Left_arm.run_angle(500,-415)
+    
+    #Drive forward, pushing the rolling camera and bringing the arm back up at the same time
     drive_base.straight(135)
     Left_arm.run_angle(500,415,wait=False)
+    
+    #Push the boat
     drive_base.straight(220)
+
+    #Come back from pushing the boat
     drive_base.straight(-220)
+
+    #Turn
     drive_base.curve(100,13) 
+
+    #Move forward 320 mm
     drive_base.straight(320)
+
+    #Curve to face exactly in front of the Light Show
     drive_base.curve(100,77)
     drive_base.curve(10,2.5)
+
+    #Drive closer to the light show
     drive_base.straight(20)
+
+    #Increase duty cycle for more power and activate chopper arm; finish M11, drop expert and audience, and drop audience into light show area
     Right_arm.dc(100)
     Right_arm.run_angle(10000000,-3700) 
     Right_arm.run_angle(1000,20)
+
+    #Drive back and turn to face the right home area. 
     drive_base.straight(-85)
     drive_base.turn(90)
+
+    #Drive extremely fast to right home area. 
     drive_base.settings(800,1000,100,200)
     drive_base.straight(1000)
 
