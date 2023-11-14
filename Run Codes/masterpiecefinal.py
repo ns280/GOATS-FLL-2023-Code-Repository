@@ -37,7 +37,6 @@ def Sahas_Nik():
     drive_base.settings(400, 800, 100, 200) 
 # ORANGE STOP LIFTED(M08) and M09 COMPLETE
 
-
 # START MOVING ROBOT TO EXECUTE M01
     Left_arm.run_angle(500, -50)
     Left_arm.run_angle(500, -210, wait=False)
@@ -75,11 +74,9 @@ def Sahas_Nik():
     drive_base.settings(300, 800, 100, 200)
     drive_base.straight(190)
     drive_base.turn(28)
-
     Left_arm.run_angle(400, 270)
     drive_base.settings(60, 800, 20, 200)
     drive_base.turn(-22)
-
     Left_arm.dc(75)
     Left_arm.run_angle(350, -280, wait=False)
     wait(400)
@@ -122,6 +119,7 @@ def Sahas_Nik():
     drive_base.turn(100)
     drive_base.settings(800, 900, 200, 400)
     drive_base.straight(600)
+# END OF RUN1
 
 def Mahati_Aarush():
 #Drop off little experts and audience members 
