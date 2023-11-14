@@ -124,37 +124,47 @@ def Sahas_Nik():
 # END OF RUN1
 
 def Mahati_Aarush():
-#Drop off little experts and audience members 
-    drive_base.turn(-5) 
-    drive_base.straight(795)
-    drive_base.turn(-45)
+
+#Drop off little experts and audience members #Yay
+
+    drive_base.straight(600)
+    drive_base.turn(-10)
+    drive_base.straight(195)
+
+    drive_base.turn(-35)
     Right_arm.run_angle(200,225)
     wait(10)
     Right_arm.run_angle(300, -35, wait=False)
     drive_base.straight(-70)
 #Turn to avoid flower
-#drive_base.turn(-57) replaced with curve
+
     drive_base.curve(45,-63)
     drive_base.straight(200)
     wait(10)
 
 #drop off innovation
-    drive_base.curve(320,86)
-    drive_base.straight(-50)
-#drive_base.turn(-30)
+
+    drive_base.curve(330,80)
+
     Right_arm.run_angle(200,240)
-    drive_base.straight(-150)
-    drive_base.turn(-50)
-    drive_base.straight(400)
-    drive_base.turn(10)
-# IZZY dropoff
+#disconnect curator
+    drive_base.turn(-25)
+
+#go back
+    drive_base.straight(-180)
+#turn for next position
+    drive_base.turn(-40)
+    drive_base.straight(200)
+    drive_base.curve(700,25)
+
+#IZZY dropoff
     Right_arm.run_angle(200,200)
     drive_base.turn(-30)
 #drive_base.curve(520,60)
 #the last expert
-    Right_arm.run_angle(200,320,wait=False)
+    Right_arm.run_angle(200,340,wait=False)
     drive_base.straight(120)
-    drive_base.curve(350,-50)
+    drive_base.curve(190,-60)
     wait(10000)
 #The End!
 
