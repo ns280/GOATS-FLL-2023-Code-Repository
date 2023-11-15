@@ -5,34 +5,30 @@ from pybricks.robotics import DriveBase, GyroDriveBase
 from pybricks.tools import wait, StopWatch
 from pybricks.tools import hub_menu
 
+#GLOBAL SETTINGS FOR GOATBOTv2 | OPTIMIZED FOR THE NEW ROBOT!!PLEASE CHECK
 hub = PrimeHub()
-
 left_motor = Motor(Port.C, Direction.COUNTERCLOCKWISE)
 right_motor = Motor(Port.D)
-
 drive_base = GyroDriveBase(left_motor, right_motor, wheel_diameter=62.5, axle_track=136)
 drive_base.settings(300,600,100,200)
-
 Right_arm = Motor(Port.E, Direction.COUNTERCLOCKWISE, [24, 12, 12, 24])
 Left_arm = Motor(Port.A, Direction.COUNTERCLOCKWISE, [24, 12, 12, 24])
-Right_armR1 = Motor(Port.E, Direction.COUNTERCLOCKWISE, [12, 24, 12, 24])
-Left_armR1 = Motor(Port.A, Direction.CLOCKWISE, [12, 24, 12, 48])
 
 speed = 400
 
-#Choose a letter                                                                                                Secrets Lie Here  ---->                                                                                  Hey, don't look!                                                                                 Please, I'll give you -$0.02!                                                                                             There's nothing I'm telling you!                                                                       Please, don't go any further!                                                            I'll ban you from the Earth!!!                                                   I'll call your mommy!!!                                                                      I'll call MY mommy, my daddy, my uncles and aunties, all my weird relatives if it means keeping this secret from the likes of you!!!                                                     Okay, fine...                                                                         Strawberries eat humans who disrespect pasta.                                             How did you guess that that wasn't my real secret?                                                         Eh, I guess I made it easy enough...                                                                                   No WAY I'm telling you the real secret! That's all you're getting!                                                                        OK, fine, I'll tell you the real secret...                                                                You're persistent, aren't you?                                                                        OK, I'll stop stalling...                                                                                 You're a menace to society, you know?                                                        You ready for this?????                                                                                   What do you mean, obviously?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!                                                                                Here we go...                                                                                                         Zero doesn't exist, because zero is nothing, but to speak of nothing is to speak of something.                                                                                                                               SHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DON'T TELL ANYONE!!!
+#MENU FOR RUNS | Choose a letter                                                                                                Secrets Lie Here  ---->                                                                                  Hey, don't look!                                                                                 Please, I'll give you -$0.02!                                                                                             There's nothing I'm telling you!                                                                       Please, don't go any further!                                                            I'll ban you from the Earth!!!                                                   I'll call your mommy!!!                                                                      I'll call MY mommy, my daddy, my uncles and aunties, all my weird relatives if it means keeping this secret from the likes of you!!!                                                     Okay, fine...                                                                         Strawberries eat humans who disrespect pasta.                                             How did you guess that that wasn't my real secret?                                                         Eh, I guess I made it easy enough...                                                                                   No WAY I'm telling you the real secret! That's all you're getting!                                                                        OK, fine, I'll tell you the real secret...                                                                You're persistent, aren't you?                                                                        OK, I'll stop stalling...                                                                                 You're a menace to society, you know?                                                        You ready for this?????                                                                                   What do you mean, obviously?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!?!                                                                                Here we go...                                                                                                         Zero doesn't exist, because zero is nothing, but to speak of nothing is to speak of something.                                                                                                                               SHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DON'T TELL ANYONE!!!
 selected = hub_menu("1","2", "3","4")
 
 #Code Starts here!
-
 def Sahas_Nik():
 #Run 1 Code
+    drive_base.settings(400, 800, 100, 200) 
 # CODE from start position to move Orange Stop / M08 and M09 completion 
-    Right_armR1.run_angle(200, 260, wait=False)
-    Left_armR1.run_angle(180, 260, wait=False)
+    Right_arm.run_angle(500, 550, wait=False)
+    Left_arm.run_angle(730, -1100, wait=False)
     drive_base.straight(250)
     drive_base.straight(50)
-    Right_armR1.run_angle(900, -270)
+    Right_arm.run_angle(900, -270)
     drive_base.settings(90, 800, 100, 200)
     drive_base.straight(-115)
     drive_base.turn(-40)
@@ -40,88 +36,117 @@ def Sahas_Nik():
 # ORANGE STOP LIFTED(M08) and M09 COMPLETE
 
 # START MOVING ROBOT TO EXECUTE M01
-    Left_armR1.run_angle(500, -50)
-    Left_armR1.run_angle(500, -210, wait=False)
+    Left_arm.run_angle(500, 250)
+    Left_arm.run_angle(1000, 800, wait=False)
     drive_base.turn(-65)
     drive_base.straight(390)
     wait(100)
-    drive_base.turn(-73)
+    drive_base.turn(-75)
     drive_base.settings(100, 800, 100, 200)
-    Right_armR1.run_angle(260, 360, wait=False)
+
+# Parllel arm down with robot moving...risky but helps with speed
+    #Right_arm.run_angle(170, 520, wait=False)
     drive_base.straight(135)
-    wait(100)
-#Right_arm.run_angleR1(400, 320)
+    Right_arm.run_angle(500, 490)
+#Wait needed for parallel arm down
+    #wait(190)
+
+    #Right_arm.run_angle(400, 320)
     drive_base.straight(-60)
-    Right_armR1.run_angle(400, -270)
+    Right_arm.run_angle(400, -270)
     drive_base.settings(400, 800, 100, 200)
 # M01 COMPLETE
 
 # START MOVING ROBOT TO COLLECT SAM STAGE MANAGER AND EXECUTE M02
     drive_base.straight(-70)
-    drive_base.turn(85)
-    Right_armR1.run_angle(200, 280, wait=False)
-    drive_base.straight(290)
-#Right_arm.run_angleR1(400, 400)
+    drive_base.turn(83)
+    Right_arm.run_angle(700, 300, wait=False)
+    drive_base.straight(280)
+    #ROBOT SHOULD TOUCH M02 TO STOP FOR ALIGNMENT FOR HOOKING SAM
+   
+    #Right_arm.run_angle(400, 400)
     drive_base.settings(100, 800, 30, 200)
-    drive_base.turn(-19)
-    Right_armR1.run_angle(300, -165)
-    drive_base.turn(-16)
+    drive_base.turn(-13)
+    Right_arm.run_angle(380, -360)
+    $SAM HOOKED AND CODE FOR 1 BUMP aka PINK BALL STARTS HERE
+
+    drive_base.turn(-22)
     drive_base.settings(200, 800, 100, 200)
     drive_base.straight(90)
+    drive_base.straight(-90)
+    #STOP CODE HERE FOR PINK BALL
+
+    #CODE FOR ORANGE BALL
+    wait(200)
+    drive_base.straight(100)
     drive_base.straight(-90)
 # COMPLETE COLLECT SAM STAGE MANAGER AND EXECUTE M02
 
 # HEAD TO M03 AND EXECUTE
     drive_base.turn(100)
     drive_base.settings(300, 800, 100, 200)
-    drive_base.straight(190)
-    drive_base.turn(28)
-    Left_armR1.run_angle(400, 270)
+    # MAY NEED TO ADJUST THE FOLLOWING LENGTH AND ANGLE TO GET LEFT ARM DOWN WITHOUT HITTING M03 PLATFORM
+    drive_base.straight(198)
+    drive_base.turn(38)
+
+    Left_arm.run_angle(1000, -1050)
     drive_base.settings(60, 800, 20, 200)
-    drive_base.turn(-22)
-    Left_armR1.dc(75)
-    Left_armR1.run_angle(350, -280, wait=False)
+    # MAY NEED TO ADJUST THE FOLLOWING ANGLE TO GO UNDER M03 PLATFORM
+    drive_base.turn(-23)
+
+    Left_arm.dc(75)
+    Left_arm.run_angle(500, 1050, wait=False)
     wait(400)
     drive_base.straight(-70)
-# COMPLETE  M02
+# COMPLETE  M03
+
 
 # HEAD TO M05 AND EXECUTE
     drive_base.settings(600, 800, 200, 400)
     drive_base.turn(15)
-    Left_armR1.run_angle(900, 280, wait=False)
-    drive_base.straight(560)
-    Right_armR1.run_angle(400, -20, wait=False)
-    drive_base.turn(-20)
-    drive_base.straight(65)
+    Left_arm.run_angle(900, -850, wait=False)
+    drive_base.straight(540)
+    drive_base.turn(-28)
+    drive_base.straight(88)
+    #MAY NEED TO ADJUST THIS LENGTH SO THAT THE ROBOT ARM DOESNT GET STUCK ON M05 WHILE FLICKING THE LEVER
     drive_base.settings(600, 800, 300, 400)
     drive_base.turn(80)
 # COMPLETE M05
 
 # HEAD TO M06 and M07 AND EXECUTE
     drive_base.settings(400, 600, 100, 200)
-    Left_armR1.run_angle(500, -280, wait=False)
+    Left_arm.run_angle(500, 950, wait=False)
     drive_base.straight(140)
-    drive_base.turn(-53)
-    wait(10)
-    drive_base.straight(480)
-    drive_base.turn(-40)
+
+    #POSITIONING THE ROBOT FOR M06 and M07
+    drive_base.turn(-50)
+    drive_base.straight(460)
+    drive_base.turn(-41)
     drive_base.settings(80, 200, 200, 400)
-    drive_base.straight(-30)
-    Left_armR1.run_angle(400, 280)
-    drive_base.straight(75)
-    Left_armR1.run_angle(400, -50)
-    drive_base.turn(-25)
-    drive_base.straight(-80)
-    Left_armR1.run_angle(400, -240)
-    drive_base.turn(10)
+
+    #COMMENTED CODE HERE TO TURN ON LEFT LEVER FOR SPEAKER
+    #drive_base.straight(-70)
+
+    #LOWERING THE ARM FOR FLIPPING THE LEFT SPEAKER LEVER
+    #Left_arm.run_angle(400, -1000)
+    #drive_base.straight(60)
+    #Left_arm.run_angle(400, 200)
+    #drive_base.turn(-25)
+    #drive_base.straight(-80)
+    #Left_arm.run_angle(1000, 600)
+    #drive_base.turn(25)
+
+    #CODE FOR M06 and RIGHT LEVER STARTS HERE
     drive_base.straight(120)
-    Right_armR1.run_angle(400, 60, wait=False)
-    drive_base.turn(12)
+    #MAY NEED TO ADJUST THIS ARM ANGLE BELOW TO LOWER RIGHT ARM WITHOUT GETTING STUCK ON M06 FRAME
+    Right_arm.run_angle(400, 100)
+    #MAY NEED TO ADJUST THIS TURN ANGLE TO HOOK THE LEVER ON M06 FRAME
+    drive_base.turn(15)
     drive_base.straight(-120)
-    drive_base.turn(100)
     drive_base.settings(800, 900, 200, 400)
+    drive_base.turn(100)
     drive_base.straight(600)
-# END OF RUN1
+#RUN1 ENDS AND ROBOT BACK IN EAST HOMEBASE
 
 def A_M():
   #Run 2 Code
