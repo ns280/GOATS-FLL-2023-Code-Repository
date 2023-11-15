@@ -68,7 +68,7 @@ def Sahas_Nik():
     drive_base.settings(100, 800, 30, 200)
     drive_base.turn(-13)
     Right_arm.run_angle(380, -360)
-    $SAM HOOKED AND CODE FOR 1 BUMP aka PINK BALL STARTS HERE
+    #SAM HOOKED AND CODE FOR 1 BUMP aka PINK BALL STARTS HERE
 
     drive_base.turn(-22)
     drive_base.settings(200, 800, 100, 200)
