@@ -212,13 +212,19 @@ def Aarush_Vihaan():
     Right_arm.run_angle(10000000,-3700) 
     Right_arm.run_angle(1000,20)
 
-    #Drive back and turn to face the right home area. 
-    drive_base.straight(-85)
-    drive_base.turn(90)
-
-    #Drive extremely fast to right home area. 
+    #Move back and turn to face Noah the Sound Engineer
+    drive_base.straight(-150)
+    drive_base.turn(-45)
+    
+    #Move to pick up Noah and turn full 180 to face home
+    drive_base.straight(242)
+    drive_base.turn(80)
+    drive_base.straight(-80)
+    drive_base.turn(60)
+    
+    #Drive back really fast
     drive_base.settings(800,1000,100,200)
-    drive_base.straight(1000)
+    drive_base.straight(1100)
 
 def Mahati_Aarush():
 #Run 4 Code 
