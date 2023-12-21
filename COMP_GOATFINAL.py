@@ -178,10 +178,10 @@ def A_M():
 
 
 def Aarush_Vihaan():
-    #Drive parallel to rolling camera
+#Drive parallel to rolling camera
     drive_base.straight(300)
     
-    #Lower left arm into the pocket next to the rolling camera
+    Lower left arm into the pocket next to the rolling camera
     Left_arm.run_angle(500,-415)
     
     #Drive forward, pushing the rolling camera and bringing the arm back up at the same time
@@ -225,6 +225,7 @@ def Aarush_Vihaan():
     #Drive back really fast
     drive_base.settings(800,1000,100,200)
     drive_base.straight(1100)
+
 
 def Mahati_Aarush():
 #Run 4 Code 
