@@ -139,8 +139,8 @@ def Sahas_Nik():
 #RUN1 ENDS AND ROBOT BACK IN EAST HOMEBASE
 
 def A_M():
-  #Run 2 Code
-  #Code for Bot2 Starts here!
+    #Run 2
+#Code for Bot2 Starts here!
     drive_base.curve(100, -35)
 #Reach the girl
     drive_base.straight(240)
@@ -148,9 +148,14 @@ def A_M():
     Right_arm.run_target(575, -400)
     drive_base.turn(-0.5)
 #Reach Chicken gear
-    drive_base.straight(124)
+#drive_base.straight(124) avoid yellow gear
+    drive_base.straight(114)
+    drive_base.turn(0.75)
+    drive_base.turn(0.25)
 #Moving the chicken
+#wait(5000)
     Left_arm.run_target(1000, 3000)
+    drive_base.turn(-0.50)
 #Chicken done
 
 #Aligning to lift the latch
@@ -217,7 +222,7 @@ def Aarush_Vihaan():
     drive_base.turn(-45)
     
     #Move to pick up Noah and turn full 180 to face home
-    drive_base.straight(242)
+    drive_base.straight(237)
     drive_base.turn(80)
     drive_base.straight(-80)
     drive_base.turn(60)
@@ -266,9 +271,31 @@ def Mahati_Aarush():
     drive_base.turn(-28) 
 
 #the last expert Emily
-    Right_arm.run_angle(200,340,wait=False)
-    drive_base.straight(45)
-    drive_base.curve(200,-62)
+    Right_arm.run_angle(120,340,wait=False)
+# Right_arm.run_angle(200, -540, wait=False) # TESTING
+#MAIN CODE drive_base.straight(45)
+#MAIN CODE drive_base.curve(200,-62)
+    drive_base.straight(55)
+    wait(10)
+    drive_base.curve(220,-52)
+#Detach Emily
+    drive_base.curve(25,-20) 
+    Left_arm.run_angle(300,540,wait=False)
+    drive_base.curve(800,30) 
+    drive_base.straight(-225)
+
+#Sound mixer
+    Left_arm.dc(100)
+#Left_arm.run_angle(100,-115,wait=False)
+#Left_arm.run_angle(100,-200,wait=False)
+    Left_arm.run_angle(150,-300,wait=False)
+    drive_base.settings(60, 800, 100, 200)
+
+    drive_base.straight(-50)
+    wait(2000)
+    drive_base.turn(15)
+    wait(100)
+    drive_base.turn(15)
     wait(10000)
 #The End!
 
