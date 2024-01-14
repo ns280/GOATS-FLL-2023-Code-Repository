@@ -218,7 +218,7 @@ def Aarush_Vihaan():                                                            
     drive_base.turn(-45)
     
 #Move to pick up Noah and turn full 180 to face home
-    drive_base.straight(242)
+    drive_base.straight(235)
     drive_base.turn(80)
     drive_base.straight(-80)
     drive_base.turn(60)
