@@ -227,7 +227,7 @@ def Aarush_Vihaan():
     drive_base.turn(90)
 
     #Drive extremely fast to right home area. 
-    drive_base.settings(800,1000,100,200)
+    drive_base.settings(1000,1000,100,200)
     drive_base.straight(1000)
 
 def Mahati_Aarush():
