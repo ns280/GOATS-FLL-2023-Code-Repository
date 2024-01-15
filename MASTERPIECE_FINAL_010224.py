@@ -233,9 +233,7 @@ def Aarush_Vihaan():
     
 #Drive back really fast
     drive_base.settings(800,1000,100,200)
-    drive_base.straight(500)
-    drive_base.turn(20)
-    drive_base.straight(600)
+    drive_base.straight(1100)
 
 def Mahati_Aarush():
 #Run 4 Code 
