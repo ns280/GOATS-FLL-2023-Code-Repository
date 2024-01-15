@@ -224,7 +224,7 @@ def Aarush_Vihaan():                                                            
     drive_base.turn(60)
     
 #Drive back really fast
-    drive_base.settings(800,1000,100,200)
+    drive_base.settings(1000,1000,100,200)
     drive_base.straight(1100)
 
 
