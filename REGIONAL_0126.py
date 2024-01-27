@@ -77,8 +77,8 @@ def Sahas_Nik():
 
 #STOP CODE HERE FOR PINK BALL
 #CODE FOR ORANGE BALL
-    wait(400)
-    drive_base.straight(90)
+    wait(500)
+    drive_base.straight(100)
     drive_base.straight(-80)
 # COMPLETE COLLECT SAM STAGE MANAGER AND EXECUTE M02
 
@@ -298,36 +298,40 @@ def Mahati_Aarush():
     drive_base.straight(67)
 #wait(10)
 #closer to sound mixer
-    drive_base.curve(250,-52)
+    drive_base.curve(240,-52)
 #Curve to align
     drive_base.curve(40,-20) 
 
     Left_arm.run_angle(300,540,wait=False)
     #to the homebase
     #Cg=heckhere
-    drive_base.curve(820,30) 
+    drive_base.curve(825,30) 
     
-    drive_base.straight(-260)
+    #drive_base.straight(-260)
+    drive_base.straight(-275)
 
 #Sound mixer
 #increase the torque
     Left_arm.dc(100)
     
-    Left_arm.run_angle(150,-350,wait=False)
+    Left_arm.run_angle(200,-350,wait=False)
 
 #Reduce speed to move the mixer
     
-    drive_base.settings(50, 100, 100, 200)
-
-    drive_base.straight(-25)
-    wait(1500)
+    #drive_base.settings(50, 100, 100, 200)
+    drive_base.settings(25, 100, 100, 200)
+    drive_base.straight(-7)
+    #drive_base.straight(-28)
+    wait(2000)
     drive_base.turn(15)
     wait(100)
     #After mixer Land Emily
+    drive_base.settings(300, 100, 100, 200)
     drive_base.turn(40)
     drive_base.straight(60)
     wait(10000)
 #The End!
+
 
 
 #Based on Selection, run the program
