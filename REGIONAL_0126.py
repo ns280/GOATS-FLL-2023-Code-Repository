@@ -275,8 +275,6 @@ def Mahati_Aarush():
     wait(10)
 
 #drop off innovation
-
-
     drive_base.curve(336,75) # New bot 1
     Right_arm.run_angle(200,265)
 
@@ -293,35 +291,44 @@ def Mahati_Aarush():
 #IZZY dropoff
 
     Right_arm.run_angle(200,206)
-    drive_base.turn(-28) 
-
+    drive_base.turn(-24) 
+   
 #the last expert Emily
     Right_arm.run_angle(120,340,wait=False)
-    drive_base.straight(65)
+    drive_base.straight(67)
 #wait(10)
-    drive_base.curve(220,-52)
-#Detach Emily
-    drive_base.curve(25,-20) 
+#closer to sound mixer
+    drive_base.curve(250,-52)
+#Curve to align
+    drive_base.curve(40,-20) 
+
     Left_arm.run_angle(300,540,wait=False)
-    drive_base.curve(800,30) 
-    #drive_base.straight(-225)
-    drive_base.straight(-220)
+    #to the homebase
+    #Cg=heckhere
+    drive_base.curve(820,30) 
+    
+    drive_base.straight(-260)
 
 #Sound mixer
+#increase the torque
     Left_arm.dc(100)
-#Left_arm.run_angle(100,-200,wait=False)
-    Left_arm.run_angle(150,-300,wait=False)
-#drive_base.settings(60, 800, 100, 200)
-    drive_base.settings(55, 100, 100, 200)
+    
+    Left_arm.run_angle(150,-350,wait=False)
 
-    drive_base.straight(-70)
+#Reduce speed to move the mixer
+    
+    drive_base.settings(50, 100, 100, 200)
+
+    drive_base.straight(-25)
     wait(1500)
     drive_base.turn(15)
     wait(100)
-    drive_base.turn(20)
-    drive_base.straight(20)
+    #After mixer Land Emily
+    drive_base.turn(40)
+    drive_base.straight(60)
     wait(10000)
 #The End!
+
 
 #Based on Selection, run the program
 if selected == "1":
