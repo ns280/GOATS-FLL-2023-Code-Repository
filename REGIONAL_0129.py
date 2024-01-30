@@ -163,30 +163,35 @@ def A_M():
     drive_base.straight(240)
 #Pickup izzy girl No wait false. Not enough distance
     Right_arm.run_target(575, -400)
+    # turn towards the chicken
     drive_base.turn(-0.55)
+    
+    #drive_base.turn(-0.70)
+    
 #Reach Chicken gear
 
-    drive_base.straight(114)
-#drive_base.turn(1)
-
-#Moving the chicken
-#wait(5000)
-    Left_arm.run_target(1000, 3000)
+    #drive_base.straight(114)
+    drive_base.straight(105)
+    drive_base.turn(-2)
     drive_base.straight(15)
     
+#Moving the chicken
+    Left_arm.run_target(1000, 4000)
+    
+    #drive_base.straight(15)  
     drive_base.turn(-1.50)
 #Chicken done
 
 #Aligning to lift the latch
     drive_base.straight(-7)
     drive_base.curve(-125,12)
+    
 
 #Raising latch and coming back
     drive_base.straight(-57)
 #unhook the latch and coming back
     drive_base.straight(10)
     drive_base.turn(22)
-
 #move back
     drive_base.straight(-100)
 
@@ -195,7 +200,6 @@ def A_M():
 #Get to the homezone
     drive_base.straight(200)
 #End of Run 2
-
 
 
 def Aarush_Vihaan():
